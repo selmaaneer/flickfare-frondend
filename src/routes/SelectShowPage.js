@@ -5,7 +5,7 @@ import styles from './SelectShowPage.module.css'
 import dayjs from "dayjs";
 
 export async function loader({ params }) {
-    const res = await axios.get('http://localhost:3000/movies/' + params.movieId + '/shows')
+    const res = await axios.get('https://flickfare-backend.vercel.app/movies/' + params.movieId + '/shows')
     const shows = res.data
 
     return { shows }
