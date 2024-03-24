@@ -4,11 +4,11 @@ import { Link, useLoaderData } from "react-router-dom";
 import styles from './SingleMoviePage.module.css'
 
 export async function loader({ params }) {
-    const res = await axios.get('http://localhost:3000/movies/' + params.movieId)
+    const res = await axios.get('https://flickfare-backend.vercel.app/movies/' + params.movieId)
     const movie = res.data
 
 
-    const castRes = await axios.get('http://localhost:3000/movies/' + params.movieId+"/cast")
+    const castRes = await axios.get('https://flickfare-backend.vercel.app/movies/' + params.movieId+"/cast")
     const casts = castRes.data
     
     return { movie, casts }
