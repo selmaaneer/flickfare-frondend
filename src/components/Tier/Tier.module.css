@@ -1,0 +1,17 @@
+.Tier{
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+.Tier h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(215, 212, 212);
+}
+
+.TierRows{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+    
+}

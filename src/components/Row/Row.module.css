@@ -1,0 +1,25 @@
+.Row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-gap: 2rem;
+}
+
+.Row h4{
+    font-size: 0.75rem;
+    color: gray;
+    font-weight: normal;
+}
+
+.RowSeats{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 0.5rem;
+}
+
+.RowWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
