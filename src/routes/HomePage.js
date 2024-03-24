@@ -6,7 +6,7 @@ import styles from './HomePage.module.css'
 
 
 export async function loader() {
-    const res = await axios.get('http://localhost:3000/movies');
+    const res = await axios.get('https://flickfare-backend.vercel.app/movies');
     
     const data = res.data
     return { data }
