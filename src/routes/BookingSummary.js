@@ -24,7 +24,7 @@ function BookingSummary(props) {
             
         }
         console.log(bookingPayload)
-        axios.post('http://localhost:3000/bookings', bookingPayload)
+        axios.post('https://flickfare-backend.vercel.app/bookings', bookingPayload)
         .then(res=>{
             setLoading(false)
             console.log(res)
