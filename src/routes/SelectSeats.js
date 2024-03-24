@@ -10,11 +10,11 @@ import { addTiers, selectShow, setBookedSeats } from "../store/screenSlice";
 
 
 export async function loader({ params }) {
-  //  const res= await axios.get('http://localhost:3000/shows/')
-    const res = await axios.get('http://localhost:3000/shows/' + params.showId)
+  //  const res= await axios.get('https://flickfare-backend.vercel.app/shows/')
+    const res = await axios.get('https://flickfare-backend.vercel.app/shows/' + params.showId)
     const show = res.data
     const showId = params.showId
-    const bookingRes = await axios.get('http://localhost:3000/bookings?show='+showId)
+    const bookingRes = await axios.get('https://flickfare-backend.vercel.app//bookings?show='+showId)
     const bookingsList = bookingRes.data
     const bookedSeats = []
     bookingsList.map(booking => {
