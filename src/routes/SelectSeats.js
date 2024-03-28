@@ -14,7 +14,7 @@ export async function loader({ params }) {
     const res = await axios.get('https://flickfare-backend.vercel.app/shows/' + params.showId)
     const show = res.data
     const showId = params.showId
-    const bookingRes = await axios.get('https://flickfare-backend.vercel.app//bookings?show='+showId)
+    const bookingRes = await axios.get('https://flickfare-backend.vercel.app/bookings?show='+showId)
     const bookingsList = bookingRes.data
     const bookedSeats = []
     bookingsList.map(booking => {
